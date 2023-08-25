@@ -50,7 +50,8 @@ def encabezado():
     correo_destino = "rafaelb1106@gmail.com"  
     enlace_whatsapp = f"https://wa.me/{numero_telefono}" 
     enlace_correo = f"mailto:{correo_destino}"
-    enlace_lin = f"https://www.linkedin.com/in/rafaelballesterosmonsalve/"     
+    enlace_lin = f"https://www.linkedin.com/in/rafaelballesterosmonsalve/" 
+    enlace_cv = f"https://rafaelhernandoballesteroscv.streamlit.app/"
     col11, col22 = st.sidebar.columns([1, 8]) 
     with col11: 
         st.image("img/movil.jpg",width= 33) 
@@ -58,13 +59,14 @@ def encabezado():
         st.image("img/email.png",width= 33)
         st.image("img/ico_lin.png",width= 33)
         st.image("img/dir.png",width= 33)
+        st.image("img/cv.png",width= 33)
     with col22:
         st.markdown(f'<p style="font-size: 20px; color: #000000;">+34 671 523462</p>', unsafe_allow_html=True)
         st.markdown(f'<a href="{enlace_whatsapp}" target="_blank" style="text-decoration: none;font-size: 20px; color: #000000;">671523462</a>', unsafe_allow_html=True)
         st.markdown(f'<a href="{enlace_correo}" target="_blank" style="text-decoration: none;font-weight: bold;font-size: 20px; color: #000000;">rafaelb1106@gmail.com</a>', unsafe_allow_html=True)
         st.markdown(f'<a href="{enlace_lin}" target="_blank" style="text-decoration: none;font-size: 20px; color: #000000;">Rafael Ballesteros</a>', unsafe_allow_html=True)
         st.markdown(f'<p style="font-size: 18px; color: #000000;"> 28014, Madrid, España</p>', unsafe_allow_html=True)
-
+        st.markdown(f'<a href="{enlace_cv}" target="_self" style="text-decoration: none;font-size: 20px; color: #000000;">Curriculum Vitae</a>', unsafe_allow_html=True)
    
     ###################
     destinatario = "rafaelb1106@hotmail.com"
