@@ -47,7 +47,7 @@ def main():
             mime="application/octet-stream"  
             )
     st.markdown("<hr>", unsafe_allow_html=True)
-    ima_dash = Image.open("img/dashboard1.jpg")
+    ima_dash = Image.open("img/dashboard1.JPG")
     st.image(ima_dash, caption="Resultado final del dashboard ")
 
     
